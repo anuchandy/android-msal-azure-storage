@@ -64,10 +64,12 @@ Let's create an "AD Application" in the same AD Domain.
 
 1. In the main top search bar, search and select "App registrations". This will bring up "App registrations" page
 2. Choose "+ New registration", this will take you to "Register an application" page, create one with following settings:
-     A. Provide a name in "Name" field e.g. android-storage-app-1
-     B. Choose "Supported Account Types" as "Accounts in this organizational directory only (Default Directory only - Single tenant)"
-     C. Click "Register"
-   This will register the app and take you to app (e.g. android-storage-app-1) details page
+     1. Provide a name in "Name" field e.g. android-storage-app-1
+     2. Choose "Supported Account Types" as "Accounts in this organizational directory only (Default Directory only - Single tenant)"
+     3. Click "Register"
+
+This will register the app and take you to app (e.g. android-storage-app-1) details page.
+
 3. In the left pane, under "Manage", select "Authentication" to get "Authentication configuration" page. Now we can create authentication configuration for 
     Android platform. If you don't see "Platform Configuration" section in this page then click on the top "Try out new experience" tab.
     1. Click on "Add Platform" and choose Android:
@@ -91,8 +93,7 @@ Let's create an "AD Application" in the same AD Domain.
     4. Click on "Grant admin consent for <AD Directory Name>" (e.g. for me it was 'Grant admin consent for Default Directory' where 'Default Directory' is name of my AD Directory)
     5. It takes some time to complete the consent process, once done you should see "Granted For <AD Directory Name>" next to "Configured permissions" entry for storage
 
-Note: If the subscription is associated with the Org/Company AD Directory, then you may not be able to grant access like above unless you're admin of the Org, this option is mostly disabled in such AD Directories. 
-This is another restriction when we talked about Azure Subscription and AD Directory previously.
+Note: If the subscription is associated with the Org/Company AD Directory, then you may not be able to grant access like above unless you're admin of the Org, this option is mostly disabled in such AD Directories. This is another restriction when we talked about Azure Subscription and AD Directory previously.
 
 ### Configure the Android Application with AD Application
 
