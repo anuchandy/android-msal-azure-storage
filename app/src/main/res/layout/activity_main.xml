@@ -21,7 +21,7 @@
 
     <Button
         android:id="@+id/callStorage"
-        android:text="Call Storage"
+        android:text="Call Storage and list items in firstcontainer"
         android:textColor="#FFFFFF"
         android:background="#00a1f1"
         android:layout_width="match_parent"

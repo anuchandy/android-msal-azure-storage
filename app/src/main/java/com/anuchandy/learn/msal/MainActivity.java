@@ -37,8 +37,8 @@ import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    final static String SCOPES [] =  {"https://anustorageandroid.blob.core.windows.net/.default" };
-    final static String STORAGE_URL = "https://anustorageandroid.blob.core.windows.net/firstcontainer?restype=container&comp=list";
+    final static String SCOPES [] =  {"https://<storage-account>.blob.core.windows.net/.default" };
+    final static String STORAGE_URL = "https://<storage-account>.blob.core.windows.net/firstcontainer?restype=container&comp=list";
     private static final String TAG = MainActivity.class.getSimpleName();
     Button callStorageButton;
     Button signOutButton;
