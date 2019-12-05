@@ -21,6 +21,8 @@ company provided email when signing up for Subscription, this can result in issu
 
 The sample application demo interactive login, where you can login using a user email and access the Azure storage. 
 
+**Note:** Following section requires you to have admin access on the AD Directory associated with the subscription. If you're using a subscription that is associated with your Org/Company then probably you may not be able to perform admin operation.
+
 Let's create a user.
 
 ### Creating User in AD Directory: 
@@ -52,9 +54,7 @@ Now we created user in AD Domain and enabled access.
 
 ### Android Application AD User and AD Application: 
 
-When user sign-in to the Android application using this email, the application needs to contact the Azure AD on user's behalf and retrieve the Bearer Token to call Storage API.
-This requires an "Azure AD Application" to be registered in the same Azure AD (where we created the user) for the Android app. We will use the identity associated this 
-"Azure AD Application" to configure the Android app.
+When user sign-in to the Android application using this email, the application needs to contact the Azure AD on user's behalf and retrieve the Bearer Token to call Storage API. This requires an "Azure AD Application" to be registered in the same Azure AD (where we created the user) for the Android app. We will use the identity associated this "Azure AD Application" to configure the Android app.
 
 Let's create an "AD Application" in the same AD Domain.
  
@@ -68,8 +68,7 @@ Let's create an "AD Application" in the same AD Domain.
 
 This will register the app and take you to app (e.g. android-storage-app-1) details page.
 
-3. In the left pane, under "Manage", select "Authentication" to get "Authentication configuration" page. Now we can create authentication configuration for 
-    Android platform. If you don't see "Platform Configuration" section in this page then click on the top "Try out new experience" tab.
+3. In the left pane, under "Manage", select "Authentication" to get "Authentication configuration" page. Now we can create authentication configuration for Android platform. If you don't see "Platform Configuration" section in this page then click on the top "Try out new experience" tab.
     1. Click on "Add Platform" and choose Android:
         
             A. Provide Package Name as "com.anuchandy.learn.msal"
@@ -89,7 +88,7 @@ This will register the app and take you to app (e.g. android-storage-app-1) deta
     2. Check "user_impersonation Access Azure Storage" and choose "Add permission"
     3. Now you're back to "API permission" page and should see an entry for "Azure Storage" under "Configured permissions"
     4. Click on "Grant admin consent for <AD Directory Name>" (e.g. for me it was 'Grant admin consent for Default Directory' where 'Default Directory' is name of my AD Directory)
-    5. It takes some time to complete the consent process, once done you should see "Granted For <AD Directory Name>" next to "Configured permissions" entry for storage
+    5. It takes some time to complete the consent process, once done you should see "Granted For `<AD Directory Name>`" next to "Configured permissions" entry for storage
 
 Note: If the subscription is associated with the Org/Company AD Directory, then you may not be able to grant access like above unless you're admin of the Org, this option is mostly disabled in such AD Directories. This is another restriction when we talked about Azure Subscription and AD Directory previously.
 
