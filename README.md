@@ -2,9 +2,7 @@
 
 ### Introduction
 
-This is a sample application demonstrating Android MSAL interactive login, where one can login using a email and access the Azure storage.
-
-Note: This app requires some configuration, following sections walk you through how to set it up.
+This is a sample application demonstrating Android MSAL interactive login, where one can login using a email and access the Azure storage.This app requires setting couple of Azure AD resources, following sections walk you through this.
 
 ### Azure Subscription and Azure Active Directory:
 
