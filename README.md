@@ -34,7 +34,7 @@ Let's create a user.
 4. We will use this user email to login to android application.
 
 Note: If the subscription is associated with the Org/Company AD Directory, then you may not be able to create a user like above unless you're admin of the Org, this option is mostly disabled in such AD Directories. This is one of
-the restriction when we talked about Azure Subscription and AD Directory previously.
+the restriction on an Azure Subscription associated to Org/Company AD Directory.
 
 ### Enabling User to access Storage:
 
@@ -90,7 +90,8 @@ This will register the app and take you to app (e.g. android-storage-app-1) deta
     4. Click on "Grant admin consent for <AD Directory Name>" (e.g. for me it was 'Grant admin consent for Default Directory' where 'Default Directory' is name of my AD Directory)
     5. It takes some time to complete the consent process, once done you should see "Granted For `<AD Directory Name>`" next to "Configured permissions" entry for storage
 
-Note: If the subscription is associated with the Org/Company AD Directory, then you may not be able to grant access like above unless you're admin of the Org, this option is mostly disabled in such AD Directories. This is another restriction when we talked about Azure Subscription and AD Directory previously.
+Note: If the subscription is associated with the Org/Company AD Directory, then you may not be able to grant access like above unless you're admin of the Org, this option is mostly disabled in such AD Directories. This is another 
+restriction on an Azure Subscription associated to Org/Company AD Directory.
 
 ### Configure the Android Application with AD Application
 
